@@ -1,15 +1,12 @@
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, KeyboardButton, ReplyKeyboardMarkup # ReplyKeyboardRemove узнать нахуй я это юзал
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
 
 # TO DO нада сделать кнопки, которые будут отправлять в бд даные о лавэ по классофикацуии.
-
-menu = [
-    [InlineKeyboardButton(text="📝Записать доход", callback_data="generate_text"),
-    InlineKeyboardButton(text="📝 Записать расход", callback_data="generate_image"),],
+inline_menu = [
+    [InlineKeyboardButton(text="📝 Записать доход", callback_data="money_income"),
+    InlineKeyboardButton(text="📝 Записать расход", callback_data="waste_of_money"),],
     
     [InlineKeyboardButton(text="🖼 Посмотореть доход", callback_data="generate_text"),
     InlineKeyboardButton(text="🖼 Посмотореть расход", callback_data="generate_image"),],
     ]
 
-menu = InlineKeyboardMarkup(inline_keyboard=menu)
-exit_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="◀️ Выйти в меню")]], resize_keyboard=True)
-iexit_kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="◀️ Выйти в меню", callback_data="menu")]])
+inline_menu = InlineKeyboardMarkup(inline_keyboard=inline_menu)

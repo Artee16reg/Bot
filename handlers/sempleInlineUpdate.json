@@ -1,0 +1,55 @@
+{
+    "ok": true,
+    "result": [
+      {
+        "update_id": 396711520,
+        "callback_query": {
+          "id": "746902002177162726",
+          "from": {
+            "id": 173901673,
+            "is_bot": false,
+            "first_name": "Mikhail",
+            "last_name": "Kryzhanovskiy",
+            "username": "kmsint",
+            "language_code": "ru"
+          },
+          "message": {
+            "message_id": 3385,
+            "from": {
+              "id": 5424991242,
+              "is_bot": true,
+              "first_name": "New_name",
+              "username": "VeryVeryVerySmart_bot"
+            },
+            "chat": {
+              "id": 173901673,
+              "first_name": "Mikhail",
+              "last_name": "Kryzhanovskiy",
+              "username": "kmsint",
+              "type": "private"
+            },
+            "date": 1670598762,
+            "text": "Это инлайн-кнопки. Нажми на любую!",
+            "reply_markup": {
+              "inline_keyboard": [
+                [
+                  {
+                    "text": "БОЛЬШАЯ КНОПКА 1",
+                    "callback_data": "big_button_1_pressed"
+                  }
+                ],
+                [
+                  {
+                    "text": "БОЛЬШАЯ КНОПКА 2",
+                    "callback_data": "big_button_2_pressed"
+                  }
+                ]
+              ]
+            }
+          },
+          "chat_instance": "6282145159071621880",
+          "data": "big_button_2_pressed"
+        }
+      }
+    ]
+  }
