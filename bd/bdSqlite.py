@@ -1,6 +1,7 @@
-import sqlite3
+import sqlite3 as sq
 
 # Создаем подключение к базе данных (файл my_database.db будет создан)
-connection = sqlite3.connect('my_database.db')
+db = sq.connect('my_database.db')
+cursor = db.cursor()
 
-connection.close()
+db.close()

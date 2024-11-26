@@ -76,7 +76,7 @@ async def celect_money_income(callback: CallbackQuery):
 # Хендлер реагирует на нажатие инлайн кнопки celect_waste_of_money
 @router.callback_query(F.data == "celect_waste_of_money")
 async def celect_waste_of_money(callback: CallbackQuery):
-    await callback.message.answer(text=f"Ваш доход {bd['waste_of_money']}")
+    await callback.message.answer(text=f"Ваш расход {bd['waste_of_money']}")
     await callback.answer()
 
 

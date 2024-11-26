@@ -19,7 +19,7 @@ async def main():
     # Настраиваем кнопку Menu
     await set_main_menu(bot)
 
-    dp.include_router(router) # Thinking about filters collback
+    dp.include_router(router)  # Thinking about filters collback
 
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot, allowed_updates=dp.resolve_used_update_types())

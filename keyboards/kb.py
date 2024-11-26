@@ -1,4 +1,4 @@
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 kb_money_waste = [
     [
@@ -6,12 +6,14 @@ kb_money_waste = [
         InlineKeyboardButton(text="📝 Записать расход", callback_data="waste_of_money"),
     ],
     [
-        InlineKeyboardButton(text="🖼 Посмотореть доход", callback_data="celect_money_income"),
-        InlineKeyboardButton(text="🖼 Посмотореть расход", callback_data="celect_waste_of_money"),
+        InlineKeyboardButton(
+            text="🖼 Посмотореть доход", callback_data="celect_money_income"
+        ),
+        InlineKeyboardButton(
+            text="🖼 Посмотореть расход", callback_data="celect_waste_of_money"
+        ),
     ],
-    [
-        InlineKeyboardButton(text="Назад", callback_data="exit")
-    ],
+    [InlineKeyboardButton(text="Назад", callback_data="exit")],
 ]
 
 inline_menu = [
